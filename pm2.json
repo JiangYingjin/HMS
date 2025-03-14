@@ -1,0 +1,7 @@
+{
+  "name": "hms",
+  "cwd": "/root/proj/hms/build",
+  "script": "pnpm start",
+  "output": "../next.log",
+  "error": "../next.log"
+}
