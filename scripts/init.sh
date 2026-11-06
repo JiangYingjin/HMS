@@ -99,7 +99,7 @@ cat <<EOF >package.json
   "name": "$PROJECT_NAME",
   "version": "0.1.0",
   "scripts": {
-    "dev": "next dev && print https://lan.jyj.cx",
+    "dev": "next dev && print https://int.jyj.cx",
     "d": "next build && rm -rf build && mkdir build && rsync -az .next build --exclude cache && ln -sf ../public build/public && ln -sf ../node_modules build/node_modules && ln -sf ../package.json build/package.json && find . -name '.env*' | xargs -I {} ln -s .{} build && pm2 start pm2.json",
     "start": "next start --port \$(grep -E '^PORT=' .env.production | cut -d '=' -f 2)",
     "lint": "next lint",
